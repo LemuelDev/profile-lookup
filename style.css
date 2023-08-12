@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #111;
+}
+
+.homepage {
+    max-width: 650px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    padding-top: 5rem;
+}
+.wrapper {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding-inline: 1rem;
+}
+.title h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(236, 174, 93);
+}
+.caption {
+    font-size: 1.2rem;
+    padding-block: 1rem;
+}
+.input-section input {
+    padding: .7rem .5rem;
+    border-radius: 4px;
+    border: none;
+    outline-color: #111;
+    outline-width: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #f2f2f2;
+    transition: .45s;
+}
+.input-section input:hover {
+    background-color: rgb(236, 174, 93);
+}
+.input-section input::placeholder {
+    font-weight: bold;
+}
+.search-btn{
+    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #111;
+    background-color: rgb(236, 174, 93);
+    transition: .45s ease;
+    cursor: pointer;
+}
+.search-btn:hover {
+    background-color: rgb(161, 94, 6);
+    font-weight: bold;
+    color: #fff;
+}
+
+.list-names {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1.5rem;
+}
+.official-lists {
+    padding-block: .75rem;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    padding-inline: .5rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    background-color: rgb(248, 219, 181);
+    cursor: pointer;
+    transition: .45s all;
+}
+.official-lists:hover {
+    background-color: rgb(232, 192, 139);
+}
+
+.modal-list {
+    transition: .45s all;
+    max-width: 350px;
+    height: 220px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    padding: 1.5rem;
+    background-color: rgb(246, 214, 171);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.modal-list .name-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1.5rem;
+
+}
+.modal-list .name-section h4 {
+    font-size: 1.3rem;
+}
+.modal-list .school-info {
+    position: relative;
+    text-align: center;
+    line-height: 1.90rem;
+    padding-bottom: 1rem;
+}
+.close-btn {
+    background-color: rgb(248, 75, 75);
+    padding: .5rem 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: .45s;
+}
+.close-btn:hover {
+    transform: scale(1.05);
+}
+.official-lists span {
+    font-weight: bold;
+}
+.school-info h4 span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(24, 46, 237);
+}
